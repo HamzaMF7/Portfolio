@@ -1,0 +1,65 @@
+{
+    "projects" : [
+        {
+            "id":1,
+            "name":"C.P-COMPANY",
+            "lien" : "https://hamzamf7.github.io/C.P-COMPANY/",
+            "image": "img/img1.png",
+            "language": "HTML/CSS"
+            
+        },
+        {
+            "id":8,
+            "name":"SinglePage_Website",
+            "lien" : "https://hamzamf7.github.io/SinglePage_WebSite_example/",
+            "image": "img/img8.png",
+            "language": "HTML/CSS/JS"
+            
+        },
+        {
+            "id":2,
+            "name":"Books_Labrary",
+            "lien" : "https://hamzamf7.github.io/Books_Labrary/",
+            "image": "img/img2.png",
+            "language": "HTML/CSS/JS"
+            
+        },
+        {
+            "id":3,
+            "name":"ToDoList_JQ",
+            "lien" : "https://hamzamf7.github.io/ToDoList_JQ/",
+            "image": "img/img3.png",
+            "language": "HTML/CSS/JQUERY"
+        },
+        {
+            "id":4,
+            "name":"Horloge_Digital",
+            "lien" : "https://hamzamf7.github.io/Horloge_Digital/",
+            "image": "img/img4.png",
+            "language": "HTML/CSS/JS"
+        },
+        {
+            "id":5,
+            "name":"Dom_Traversal",
+            "lien" : "https://hamzamf7.github.io/Dom_Traversal/",
+            "image": "img/img5.png",
+            "language": "HTML/CSS/JS"
+        },
+        {
+            "id":6,
+            "name":"Hello_there",
+            "lien" : "https://hamzamf7.github.io/Hello_there/",
+            "image": "img/img6.png",
+            "language": "HTML/CSS"
+        },
+        {
+            "id":7,
+            "name":"Calculator",
+            "lien" : "https://hamzamf7.github.io/Calculator/",
+            "image": "img/img7.png",
+            "language": "HTML/CSS/JS"
+        }
+    ]
+
+}
+
