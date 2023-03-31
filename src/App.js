@@ -7,6 +7,7 @@ import useLocalStorage from "use-local-storage";
 import "./App.css";
 import 'animate.css';
 import AOS from 'aos';
+import '../node_modules/aos/dist/aos.css';
 
 // Import components
 import Header from "./components/header";
