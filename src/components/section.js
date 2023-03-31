@@ -10,7 +10,7 @@ export default function Section() {
   return (
     <section>
         <Routes>
-          <Route exact path="/" element={<About />} />
+          <Route index path="/" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/works" element={<Works />} />
