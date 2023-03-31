@@ -38,6 +38,9 @@
   margin: 0;
   padding: 0;
 }
+.animate__animated {
+  --animate-duration: 1s;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -137,9 +140,6 @@ header .links {
   background-color: var(--backMainColor);
   border-radius: 15px;
   padding: 0 20px;
-}
-.links-section {
-  /* margin: 0 0 30px auto; */
 }
 .links-section ul {
   display: flex;
@@ -564,9 +564,6 @@ main .container section {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  .section-content .title .rule {
-    /* display: none; */
-  }
   .section-content .title h2 {
     font-size: 2.2em;
   }

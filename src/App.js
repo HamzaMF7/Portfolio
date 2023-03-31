@@ -1,144 +1,101 @@
+// Import necessary dependencies
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import useLocalStorage from "use-local-storage";
+
+// Import animation and style
 import "./App.css";
+import 'animate.css';
+import AOS from 'aos';
+
+// Import components
 import Header from "./components/header";
 import SideBar from "./components/sideBar";
-import Section from "./components/section"
-import useLocalStorage from "use-local-storage";
-import { useEffect } from "react";
-import img1 from "./img/back.jpg";
-import img2 from "./img/back2.jpg";
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import Section from "./components/section";
 
+// Import background images
+import backgroundImageLight from "./img/back.jpg";
+import backgroundImageDark from "./img/back2.jpg";
 
 function App() {
-  //************************ dark and light mode *********************************
-  const defaultDark = window.matchMedia(
-    "(prefers-color-scheme: light)"
-  ).matches;
-  const [mode, setMode] = useLocalStorage(
-    "mode",
-    defaultDark ? "light" : "dark"
-  );
-
   useEffect(() => {
-    var body = document.querySelector("body");
-    if (mode === "dark") {
-      body.style.setProperty("--background-image", `url(${img1})`);
-      body.style.setProperty("--bodyBeforeBg", "#11111158");
-    } else {
-      body.style.setProperty("--background-image", `url(${img2})`);
-      body.style.setProperty("--bodyBeforeBg", "#243b550f");
-    }
-  }, [mode]);
+    AOS.init({});
+  }, []);
 
-  function theme() {
-    const newTheme = mode === "dark" ? "light" : "dark";
-    setMode(newTheme);
-  }
-  //********************************************************************************
+  // Get current URL location
+  const { pathname } = useLocation();
+
+  // Set default dark mode preference based on user's system preferences
+  const defaultDarkMode = window.matchMedia("(prefers-color-scheme: light)").matches;
+
+  // Use local storage to store the dark mode preference
+  const [isDarkMode, setIsDarkMode] = useLocalStorage("isDarkMode", defaultDarkMode);
+
+  // Set background image and color scheme based on dark mode preference
+  useEffect(() => {
+    const body = document.querySelector("body");
+    const backgroundImage = isDarkMode ? backgroundImageLight : backgroundImageDark;
+
+    body.style.setProperty("--background-image", `url(${backgroundImage})`);
+    body.style.setProperty("--bodyBeforeBg", isDarkMode ? "#11111158" : "#243b550f");
+  }, [isDarkMode]);
+
+  // Set state to determine whether user is on a mobile device or not
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 992);
+
+  // Update isMobile state when the window is resized
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 992);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Get the current route
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevState) => !prevState);
+  };
 
-  let location = useLocation();
-  const currentRoute = location.pathname;
-  console.log(location)
-
+  // Render the app
   return (
-    
-      <div className="app" data-theme={mode}>
-        <Header theme={theme} />
-        <main>
-          <div className="container">
-            {/* links for mobile  */}
-            {/* <div className="links-nav">
+    <div className="app animate__animated animate__fadeIn" data-theme={isDarkMode ? "dark" : "light"}>
+      <Header onToggleDarkMode={toggleDarkMode} />
+      <main>
+        <div className="container">
+          {/* Render the links navigation for mobile */}
+          <div className="links-nav">
             <ul>
               <li>
                 <i className="fa-regular fa-user opacity"></i>
-                <a className="a-nav opacity" href="/">
+                <Link className="a-nav opacity" to="/">
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <i className="fa-regular fa-file opacity"></i>
-                <a className="a-nav opacity" href="/resume">
+                <Link className="a-nav opacity" to="/resume">
                   Resume
-                </a>
+                </Link>
               </li>
               <li>
                 <i className="fa-solid fa-briefcase opacity"></i>
-                <a className="a-nav opacity" href="/works">
+                <Link className="a-nav opacity" to="/works">
                   Works
-                </a>
+                </Link>
               </li>
               <li>
                 <i className="fa-solid fa-address-book opacity"></i>
-                <a className="a-nav opacity" href="/contact">
+                <Link className="a-nav opacity" to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
-          </div> */}
-
-          <div className="links-nav">
-              <ul>
-                <li>
-                  <i className="fa-regular fa-user opacity"></i>
-                  <Link className="a-nav opacity" to="/">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <i className="fa-regular fa-file opacity"></i>
-                  <Link className="a-nav opacity" to="/resume">
-                    Resume
-                  </Link>
-                </li>
-                <li>
-                  <i className="fa-solid fa-briefcase opacity"></i>
-                  <Link className="a-nav opacity" to="/works">
-                    Works
-                  </Link>
-                </li>
-                <li>
-                  <i className="fa-solid fa-address-book opacity"></i>
-                  <Link className="a-nav opacity" to="/contact">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            {(currentRoute === "/" || !isMobile) && <SideBar />}
-            <Section />
           </div>
-        </main>
-      </div>
+          {/* Render the sidebar on the homepage or on desktop devices */}
+          {(pathname === "/" || !isMobile) && <SideBar />}
+          <Section />
+        </div>
+      </main>
+    </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            

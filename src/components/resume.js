@@ -58,8 +58,8 @@ export default function Resume(e) {
           </div>
 
           <ul className="timeline-list">
-            <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">
+            <li className="timeline-item ">
+              <h4 className="h4 timeline-item-title animate__animated animate__backInUp">
                 University of Science and Technology
               </h4>
 

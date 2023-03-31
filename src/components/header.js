@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
+import 'animate.css';
 
-export default function Header(props) {
+export default function Header({onToggleDarkMode}) {
 
   const [nav, setNav] = useState(false);
 
@@ -34,7 +35,7 @@ export default function Header(props) {
 
   return (
     <header>
-      <div className="container">
+      <div className="container animate_animated animate__fadeIn">
          <Link to="/" className="logo">
           <span className="grey-color">&lt;</span>
           <span className="logo-name">Hamza Maerof</span>
@@ -71,7 +72,7 @@ export default function Header(props) {
             </ul>
           </div>
           <div className="icons">
-            <div onClick={props.theme} className="sun">
+            <div onClick={onToggleDarkMode} className="sun">
               <i className="fa-solid fa-sun"></i>
             </div>
             <div onClick={barMenu} className="menu">
