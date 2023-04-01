@@ -3,7 +3,10 @@ import hamza from '../img/hamza.jpg'
 
 export default function SideBar() {
   return (
-    <aside>
+    <aside data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    data-aos-duration="1000" >
         <div class="image">
             <img src={hamza} alt="profile" />
         </div>

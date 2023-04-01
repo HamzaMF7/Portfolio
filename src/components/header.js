@@ -35,7 +35,10 @@ export default function Header({onToggleDarkMode}) {
 
   return (
     <header>
-      <div className="container animate_animated animate__fadeIn">
+      <div className="container" data-aos="fade-down"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1000" >
          <Link to="/" className="logo">
           <span className="grey-color">&lt;</span>
           <span className="logo-name">Hamza Maerof</span>

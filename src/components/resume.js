@@ -49,7 +49,7 @@ export default function Resume(e) {
           <div className="rule"></div>
         </div>
 
-        <div className="timeline">
+        <div className="timeline" data-aos="fade-up" >
           <div className="title-wrapper">
             <div className="icon-box">
               <i className="fa-solid fa-graduation-cap"></i>
@@ -59,7 +59,7 @@ export default function Resume(e) {
 
           <ul className="timeline-list">
             <li className="timeline-item ">
-              <h4 className="h4 timeline-item-title animate__animated animate__backInUp">
+              <h4 className="h4 timeline-item-title">
                 University of Science and Technology
               </h4>
 
@@ -95,7 +95,7 @@ export default function Resume(e) {
           </ul>
         </div>
 
-        <div className="timeline">
+        <div className="timeline" data-aos="fade-up" >
           <div className="title-wrapper">
             <div className="icon-box">
               <i className="fa-solid fa-atom"></i>

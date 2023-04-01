@@ -13,7 +13,7 @@ export default function Works(props) {
 
         <div class="projects">
           {projects.map((e) => (
-            <div className="card" key={e.id}>
+            <div  data-aos="zoom-in-up"className="card" key={e.id}>
               <div className="box-image">
                 <a href={e.lien} target="_blank" ><i class="fa-solid fa-eye view"></i></a>
                 <img src={require(`../${e.image}`)} alt="card" />

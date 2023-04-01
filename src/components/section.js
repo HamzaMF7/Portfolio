@@ -8,7 +8,10 @@ import Works from "./works";
 export default function Section() {
   
   return (
-    <section>
+    <section data-aos="fade-left"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    data-aos-duration="1000" >
         <Routes>
           <Route index path="/" element={<About />} />
           <Route path="/contact" element={<Contact />} />

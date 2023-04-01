@@ -41,7 +41,9 @@
 .animate__animated {
   --animate-duration: 1s;
 }
-
+.app {
+  overflow: hidden;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-image: var(--background-image);
