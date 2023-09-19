@@ -12,11 +12,11 @@ export default function Resume(e) {
     var useProgressFill = Array.from(progressFill);
     var started = false;
 
-    var top = document.getElementsByClassName("title-wrapper")
+    var top = document.getElementsByClassName("title-wrapper");
     console.log(top[1]);
 
     window.onscroll = () => {
-      if (window.scrollY >= useSkill.offsetTop -490) {
+      if (window.scrollY >= useSkill.offsetTop - 490) {
         console.log("reached");
         for (var i = 0; i < useData.length; i++) {
           useProgressFill[i].style.width = `${useData[i].getAttribute(
@@ -49,7 +49,7 @@ export default function Resume(e) {
           <div className="rule"></div>
         </div>
 
-        <div className="timeline" data-aos="fade-up" >
+        <div className="timeline" data-aos="fade-up">
           <div className="title-wrapper">
             <div className="icon-box">
               <i className="fa-solid fa-graduation-cap"></i>
@@ -95,7 +95,7 @@ export default function Resume(e) {
           </ul>
         </div>
 
-        <div className="timeline" data-aos="fade-up" >
+        <div className="timeline" data-aos="fade-up">
           <div className="title-wrapper">
             <div className="icon-box">
               <i className="fa-solid fa-atom"></i>
@@ -106,9 +106,15 @@ export default function Resume(e) {
 
           <ul className="timeline-list">
             <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">Geniway Agency</h4>
+              <h4 className="h4 timeline-item-title">
+                Design and development of an e-commerce website
+              </h4>
 
-              <span>2015 — Present</span>
+              <p className="timeline-text">HTML/CSS, ReactJS, Laravel, MySQL</p>
+            </li>
+
+            <li className="timeline-item">
+              <h4 className="h4 timeline-item-title">Geniway Agency</h4>
 
               <p className="timeline-text">
                 Creation of a lading page with HTML/CSS, JS, PHP, MySQL
@@ -118,20 +124,8 @@ export default function Resume(e) {
 
             <li className="timeline-item">
               <h4 className="h4 timeline-item-title">
-                Design and development of an e-commerce site
-              </h4>
-
-              <span>2013 — 2015</span>
-
-              <p className="timeline-text">HTML/CSS, ReactJS, Laravel, MySQL</p>
-            </li>
-
-            <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">
                 Management of a distributed Database on Oracle servers
               </h4>
-
-              <span>2010 — 2013</span>
 
               <p className="timeline-text">
                 Tools: OracleDB , SQLDeveloper
@@ -157,12 +151,16 @@ export default function Resume(e) {
               <div className="title-wrapper">
                 <h5 className="h5">HTML/CSS</h5>
                 <div className="percentage">
-                  <data value="90">0</data><span>%</span>
+                  <data value="90">0</data>
+                  <span>%</span>
                 </div>
               </div>
 
               <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{ width: "0%" }}></div>
+                <div
+                  className="skill-progress-fill"
+                  style={{ width: "0%" }}
+                ></div>
               </div>
             </li>
 
@@ -170,7 +168,8 @@ export default function Resume(e) {
               <div className="title-wrapper">
                 <h5 className="h5">JAVASCRIPT</h5>
                 <div className="percentage">
-                  <data value="80">0</data><span>%</span>
+                  <data value="80">0</data>
+                  <span>%</span>
                 </div>
               </div>
 
@@ -186,12 +185,16 @@ export default function Resume(e) {
               <div className="title-wrapper">
                 <h5 className="h5">REACT.JS</h5>
                 <div className="percentage">
-                  <data value="80">0</data><span>%</span>
+                  <data value="90">0</data>
+                  <span>%</span>
                 </div>
               </div>
 
               <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{ width: "0%" }}></div>
+                <div
+                  className="skill-progress-fill"
+                  style={{ width: "0%" }}
+                ></div>
               </div>
             </li>
 
@@ -199,12 +202,16 @@ export default function Resume(e) {
               <div className="title-wrapper">
                 <h5 className="h5">PHP</h5>
                 <div className="percentage">
-                  <data value="70">0</data><span>%</span>
+                  <data value="70">0</data>
+                  <span>%</span>
                 </div>
               </div>
 
               <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{ width: "0%" }}></div>
+                <div
+                  className="skill-progress-fill"
+                  style={{ width: "0%" }}
+                ></div>
               </div>
             </li>
 
@@ -212,12 +219,16 @@ export default function Resume(e) {
               <div className="title-wrapper">
                 <h5 className="h5">LARAVEL</h5>
                 <div className="percentage">
-                  <data value="80">0</data><span>%</span>
+                  <data value="80">0</data>
+                  <span>%</span>
                 </div>
               </div>
 
               <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{ width: "0%" }}></div>
+                <div
+                  className="skill-progress-fill"
+                  style={{ width: "0%" }}
+                ></div>
               </div>
             </li>
 
@@ -225,12 +236,16 @@ export default function Resume(e) {
               <div className="title-wrapper">
                 <h5 className="h5">MYSQL</h5>
                 <div className="percentage">
-                  <data value="90">0</data><span>%</span>
+                  <data value="90">0</data>
+                  <span>%</span>
                 </div>
               </div>
 
               <div className="skill-progress-bg">
-                <div className="skill-progress-fill" style={{ width: "0%" }}></div>
+                <div
+                  className="skill-progress-fill"
+                  style={{ width: "0%" }}
+                ></div>
               </div>
             </li>
           </ul>

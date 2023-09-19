@@ -16,7 +16,7 @@ export default function About() {
       </p>
       <h3>what i do!</h3>
       <div class="services">
-        <div class="box">
+        {/* <div class="box">
           <i class="fa-solid fa-camera-retro"></i>
           <div class="box-c">
             <h4>Photography</h4>
@@ -26,7 +26,7 @@ export default function About() {
               emotions through my lens.
             </p>
           </div>
-        </div>
+        </div> */}
         <div class="box">
           <i class="fa-solid fa-gears"></i>
           <div class="box-c">

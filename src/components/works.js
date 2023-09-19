@@ -15,7 +15,7 @@ export default function Works(props) {
           {projects.map((e) => (
             <div  data-aos="zoom-in-up"className="card" key={e.id}>
               <div className="box-image">
-                <a href={e.lien} target="_blank" ><i class="fa-solid fa-eye view"></i></a>
+                <a href={e.lien} target="_blank" rel="noreferrer" ><i class="fa-solid fa-eye view"></i></a>
                 <img src={require(`../${e.image}`)} alt="card" />
               </div>
               <div className="box-info">
@@ -25,7 +25,7 @@ export default function Works(props) {
                     <i class="fa-solid fa-circle"></i>
                     <span>{e.language}</span>
                   </div>
-                  <a className="mobile-view" href={e.lien} target="_blank" ><i class="fa-solid fa-eye"></i></a>
+                  <a className="mobile-view" href={e.lien} target="_blank" rel="noreferrer" ><i class="fa-solid fa-eye"></i></a>
                 </div>
               </div>
             </div>

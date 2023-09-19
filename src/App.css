@@ -6,6 +6,7 @@
 
 :root {
   --linearGradient: linear-gradient(to right, #141e30, #243b55);
+  /* --linearGradient: linear-gradient(to right, #0d6dfd, #243b55); */
   /* --linearGradient: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); */
   --mainColor: #243b55;
   --secondColor: #141e30;
@@ -16,8 +17,9 @@
   --backThirdColor: #141e30;
   --bodyBeforeBg: #11111158;
   --background-image: url("./img/back.jpg");
-  --opacityBorder: #243b555b;
+  --opacityBorder: #243b552e;
   --opacity: 0.5;
+  --dark : white;
 }
 
 [data-theme="light"] {
@@ -30,6 +32,7 @@
   --backThirdColor: #141e30;
   --bodyBeforeBg: #243b550f;
   --background-image: url("./img/back2.jpg");
+  --dark : #141e30 ;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -87,6 +90,7 @@ html {
 
 a {
   text-decoration: none;
+  text-align: -webkit-center;
 }
 ul {
   list-style: none;
@@ -128,9 +132,15 @@ header .logo-name {
 header .container img {
   font-size: 3em;
 }
-@media (max-width: 568px) {
+@media (max-width: 992px) {
+  header {
+    background-color: var(--backMainColor);
+  }
   header .logo {
-    background-color: #000;
+    background-color: transparent;
+    font-size: 1.2em;
+    width: fit-content;
+    padding-left: 0;
   }
 }
 /* ********************************* */
@@ -191,18 +201,19 @@ header .links {
   header .links {
     width: fit-content;
     padding: 0;
+    background-color: transparent;
   }
   .links-section {
     display: none;
   }
-  header .logo {
+  /* header .logo {
     font-size: 1.2em;
     width: fit-content;
     padding-left: 0;
-  }
+  } */
 }
 /* ********************************* */
-header .container .sun-icon {
+/* header .container .sun-icon {
   background: var(--backMainColor);
   height: 84.4px;
   border-radius: 15px;
@@ -210,7 +221,7 @@ header .container .sun-icon {
   align-items: center;
   justify-content: center;
   width: 70px;
-}
+} */
 header .container .sun,
 .menu {
   position: relative;
@@ -218,7 +229,7 @@ header .container .sun,
   width: 50px;
   border-radius: 50%;
   border: none;
-  background-color: var(--backSecondColor);
+  background-color: var(--backMainColor);
   transition: 0.3s;
 }
 header .container .menu {
@@ -240,15 +251,18 @@ header .container .sun i,
   font-size: 1.3em;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  color: var(--dark);
 }
-
+header .container .sun:hover  i {
+  color: white;
+}
 .links-nav {
   /* display: none; */
   position: absolute;
   inset: 0;
   width: 100%;
   height: fit-content;
-  background-color: black;
+  background-color: var(--backMainColor);
   padding: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -265,12 +279,12 @@ header .container .sun i,
 .links-nav ul i {
   margin-bottom: 10px;
   font-size: 1.3em;
-  color: #fff;
+  color: var(--textColor);
   margin-right: 10px;
   transition: 0.2s;
 }
 .links-nav ul a {
-  color: #ffff;
+  color: var(--textColor);
   font-size: 0.8em;
   transition: 0.2s;
   cursor: pointer;
@@ -284,9 +298,6 @@ header .container .sun i,
   }
 }
 @media (max-width: 992px) {
-  header {
-    background-color: black;
-  }
   header .container {
     height: 77px;
   }
@@ -456,6 +467,7 @@ aside .info .info-b .text h6 {
 aside .info .info-b .text span {
   font-size: 0.9em;
   color: var(--textColor);
+  font-weight: 300;
 }
 /* aside .btn {
     text-align: center;
@@ -557,23 +569,28 @@ main .container section {
 }
 .section-content .title h2 {
   color: var(--textColor);
-  font-size: 2.4em;
+  font-size: 2.2rem;
   text-transform: capitalize;
 }
 .section-content .title .rule {
   width: 30%;
-  height: 2px;
+  height: 6px;
   margin-left: 10px;
+  border-radius: 50%;
 }
 @media (max-width: 768px) {
   .section-content .title h2 {
     font-size: 2.2em;
   }
+  .section-content .title .rule{
+    width: 34%;
+    height: 5px;
+  }
 }
 .section-content > p {
   color: var(--textColor);
   opacity: 0.5;
-  font-size: 1em;
+  font-size: 1.1rem;
   margin: 30px 0;
   line-height: 1.8;
 }
@@ -603,25 +620,7 @@ section .section-content .services .box > i {
   font-size: 2.1em;
   color: var(--secondColor);
 }
-/*
-section .section-content .services .box:nth-child(1) > i {
-  color: #24553e;
-}
-section .section-content .services .box:nth-child(2) > i {
-  color: #545524;
-}
-section .section-content .services .box:nth-child(3) > i {
-  color: #24553e;
-}
-section .section-content .services .box:nth-child(4) > i {
-  color: #553e24;
-}
-section .section-content .services .box:nth-child(5) > i {
-  color: #545524;
-}
-section .section-content .services .box:nth-child(6) > i {
-  color: #55243b;
-} */
+
 section .section-content .services .box .box-c {
   flex: 1;
 }
@@ -633,8 +632,8 @@ section .section-content .services .box .box-c h4 {
 section .section-content .services .box .box-c p {
   color: var(--textColor);
   line-height: 1.8;
-  opacity: 0.7;
-  font-weight: 200;
+  opacity: var(--opacity);
+  font-weight: 300;
 }
 section .section-content .services .box {
   transition: 0.3s;
@@ -730,9 +729,9 @@ section .section-content .services .box:hover {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--mainColor);
+  background: var(--thirdColor);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--secondColor);
+  box-shadow: 0 0 0 4px #0d6dfd4a;
 }
 
 .timeline-text {
@@ -787,7 +786,7 @@ section .section-content .services .box:hover {
 }
 
 .skill-progress-fill {
-  background: var(--mainColor);
+  background: var(--thirdColor);
   height: 100%;
   border-radius: inherit;
   transition: 1.5s;
@@ -901,8 +900,6 @@ textarea.form-input::-webkit-resizer {
   font-size: 16px;
 }
 
-/* .form-btn:hover { background: var(--backMainColor); } */
-
 .form-btn:hover::before {
   background: var(--bg-gradient-yellow-2);
 }
@@ -911,10 +908,6 @@ textarea.form-input::-webkit-resizer {
   opacity: 0.7;
   cursor: not-allowed;
 }
-
-/* .form-btn:disabled:hover { background: var(--border-gradient-onyx); } */
-
-/* .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); } */
 
 /*-----------------------------------*\
   #WORKS
@@ -927,6 +920,7 @@ textarea.form-input::-webkit-resizer {
 }
 .projects .card {
   background: var(--backSecondColor);
+  border: none;
 }
 .projects .box-image {
   overflow: hidden;
@@ -984,7 +978,7 @@ textarea.form-input::-webkit-resizer {
   align-items: center;
   margin: 20px 0;
   font-size: 0.9em;
-  font-weight: lighter;
+  font-weight: 300;
 }
 .projects .card .info .disc > i {
   color: var(--thirdColor);

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import 'animate.css';
 
-export default function Header({onToggleDarkMode}) {
+export default function Header({onToggleDarkMode , dark}) {
 
   const [nav, setNav] = useState(false);
 
@@ -76,7 +76,7 @@ export default function Header({onToggleDarkMode}) {
           </div>
           <div className="icons">
             <div onClick={onToggleDarkMode} className="sun">
-              <i className="fa-solid fa-sun"></i>
+              {dark ? <i className="fa-solid fa-sun"></i> :  <i className="fa-solid fa-moon"></i>}
             </div>
             <div onClick={barMenu} className="menu">
               <i className="fa-solid fa-bars"></i>

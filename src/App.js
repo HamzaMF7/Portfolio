@@ -58,7 +58,7 @@ function App() {
   // Render the app
   return (
     <div className="app animate__animated animate__fadeIn" data-theme={isDarkMode ? "dark" : "light"}>
-      <Header onToggleDarkMode={toggleDarkMode} />
+      <Header onToggleDarkMode={toggleDarkMode} dark={isDarkMode} />
       <main>
         <div className="container">
           {/* Render the links navigation for mobile */}
