@@ -4,7 +4,7 @@
             "id":2,
             "name":"E-commerce store",
             "lien" : "https://califit.calisthenics-fit.com/",
-            "image": "img/img2.png",
+            "image": "img/img2.webp",
             "language": "HTML / SCSS / ReactJS / Laravel"
             
         },
@@ -12,14 +12,14 @@
             "id":4,
             "name":"Dashboard",
             "lien" : "https://califitdashboard.calisthenics-fit.com/",
-            "image": "img/img4.png",
+            "image": "img/img4.webp",
             "language": "HTML / SCSS / ReactJS / Laravel"
         },
         {
             "id":1,
             "name":"C.P-COMPANY",
             "lien" : "https://hamzamf7.github.io/C.P-COMPANY/",
-            "image": "img/img1.png",
+            "image": "img/img1.webp",
             "language": "HTML / CSS " 
             
         },
@@ -27,7 +27,7 @@
             "id":8,
             "name":"SinglePage_Website",
             "lien" : "https://hamzamf7.github.io/SinglePage_WebSite_example/",
-            "image": "img/img8.png",
+            "image": "img/img8.webp",
             "language": "HTML / CSS / JS"
             
         },
@@ -35,7 +35,7 @@
             "id":3,
             "name":"ToDoList_JQ",
             "lien" : "https://hamzamf7.github.io/ToDoList_JQ/",
-            "image": "img/img3.png",
+            "image": "img/img3.webp",
             "language": "HTML / CSS / JQUERY"
         }
     ]

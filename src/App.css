@@ -16,7 +16,7 @@
   --backSecondColor: #0d131e8d;
   --backThirdColor: #141e30;
   --bodyBeforeBg: #11111158;
-  --background-image: url("./img/back.jpg");
+  --background-image: url("./img/back.webp");
   --opacityBorder: #243b552e;
   --opacity: 0.5;
   --dark : white;
@@ -31,7 +31,7 @@
   --backSecondColor: #f3f6f7;
   --backThirdColor: #141e30;
   --bodyBeforeBg: #243b550f;
-  --background-image: url("./img/back2.jpg");
+  --background-image: url("./img/back2.webp");
   --dark : #141e30 ;
 }
 * {

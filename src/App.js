@@ -15,8 +15,8 @@ import SideBar from "./components/sideBar";
 import Section from "./components/section";
 
 // Import background images
-import backgroundImageLight from "./img/back.jpg";
-import backgroundImageDark from "./img/back2.jpg";
+import backgroundImageLight from "./img/back.webp";
+import backgroundImageDark from "./img/back2.webp";
 
 function App() {
   useEffect(() => {
