@@ -54,10 +54,22 @@ export default function Resume(e) {
             <div className="icon-box">
               <i className="fa-solid fa-graduation-cap"></i>
             </div>
-            <h3 className="h3">Education</h3>
+            <h3 className="h3">Education & Certifications</h3>
           </div>
 
           <ul className="timeline-list">
+            <li className="timeline-item ">
+              <h4 className="h4 timeline-item-title">
+                3W Academy
+              </h4>
+
+              <span>Full stack JS / PHP Developer Certification</span>
+
+              <p className="timeline-text">
+              web development integrator
+              </p>
+            </li>
+
             <li className="timeline-item ">
               <h4 className="h4 timeline-item-title">
                 University of Science and Technology
@@ -107,10 +119,12 @@ export default function Resume(e) {
           <ul className="timeline-list">
             <li className="timeline-item">
               <h4 className="h4 timeline-item-title">
-                Design and development of an e-commerce website
+                3W Academy
               </h4>
 
-              <p className="timeline-text">HTML/CSS, ReactJS, Laravel, MySQL</p>
+              <p className="timeline-text">
+                Design and development of an e-commerce website <br />
+                Tools : HTML-CSS&SCSS-ReactJS-Redux-MUI-Bootstrap-Laravel-MySQL</p>
             </li>
 
             <li className="timeline-item">
@@ -128,7 +142,7 @@ export default function Resume(e) {
               </h4>
 
               <p className="timeline-text">
-                Tools: OracleDB , SQLDeveloper
+                Tools : OracleDB , SQLDeveloper
                 <br />
                 - Creation of a virtual network <br />
                 - Creation of database links <br />

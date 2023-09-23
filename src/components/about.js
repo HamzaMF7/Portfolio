@@ -27,16 +27,7 @@ export default function About() {
             </p>
           </div>
         </div> */}
-        <div class="box">
-          <i class="fa-solid fa-gears"></i>
-          <div class="box-c">
-            <h4>Managment</h4>
-            <p>
-              I offer website management services that encompass a range of
-              tasks required to keep a website running smoothly and effectively.
-            </p>
-          </div>
-        </div>
+
         <div class="box">
           <i class="fa-solid fa-code"></i>
           <div class="box-c">
@@ -45,6 +36,16 @@ export default function About() {
               I offer web development services that involve the creation of
               custom websites and web applications tailored to meet the unique
               needs of each client.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-gears"></i>
+          <div class="box-c">
+            <h4>Managment</h4>
+            <p>
+              I offer website management services that encompass a range of
+              tasks required to keep a website running smoothly and effectively.
             </p>
           </div>
         </div>

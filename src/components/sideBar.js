@@ -1,6 +1,6 @@
 import React from "react";
 import hamza from "../img/hamza.jpg";
-import CV from "../img/CV_HamzaMaerof.pdf";
+import CV from "../img/CV_hamza_maerof.pdf";
 
 export default function SideBar() {
   return (
@@ -23,12 +23,12 @@ export default function SideBar() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/HamzaMF7" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/hamza-maerof-379239236/" target="_blank">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </li>
@@ -65,7 +65,7 @@ export default function SideBar() {
           <i class="fa-solid fa-cake-candles"></i>
           <div class="text">
             <h6>birthday</h6>
-            <span>septembre26,1998</span>
+            <span>26,september</span>
           </div>
         </div>
       </div>
