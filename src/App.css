@@ -97,6 +97,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+.title {
+  margin-bottom: 40px;
+}
 /* .container {
   padding-left: 10px;
   padding-right: 10px;
@@ -565,7 +568,6 @@ main .container section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* margin-bottom: ; */
 }
 .section-content .title h2 {
   color: var(--textColor);
@@ -591,7 +593,6 @@ main .container section {
   color: var(--textColor);
   opacity: 0.5;
   font-size: 1.1rem;
-  margin: 30px 0;
   line-height: 1.8;
 }
 .section-content > h3 {
@@ -663,9 +664,6 @@ section .section-content .services .box:hover {
 
 .timeline {
   margin-bottom: 30px;
-}
-.resume .title {
-  margin-bottom: 50px;
 }
 .timeline .title-wrapper {
   display: flex;
@@ -818,7 +816,7 @@ section .section-content .services .box:hover {
 }
 
 .contact-form {
-  margin-bottom: 10px;
+  margin-bottom: 403px;
 }
 
 .form-title {
